@@ -1,3 +1,4 @@
+import turtle
 turtle.forward(distance)
 turtle.fd(distance)
 
@@ -9,7 +10,7 @@ turtle.backward(distance)
 turtle.right(angle)
 turtle.rt(angle)
 
-turtle.left(angle)¶
+turtle.left(angle)
 turtle.lt(angle)
 #Parameters:	angle – a number (integer or float)
 
@@ -26,8 +27,13 @@ turtle.sety(y)
 turtle.setheading(to_angle)
 turtle.seth(to_angle)
 #Parameters:	to_angle – a number (integer or float)
+# Here are some common directions in degrees:
+standard mode	logo mode
+0 - east	           0 - north
+90 - north	           90 - east
+180 - west	           180 - south
+270 - south	           270 - west
 
-turtle.home()
 
 turtle.circle(radius, extent=None, steps=None)
 #Parameters:	radius – a number
@@ -36,8 +42,16 @@ turtle.circle(radius, extent=None, steps=None)
             
 turtle.speed(speed=None)
 #Parameters:	speed – an integer in the range 0..10 or a speedstring
+# Here are some speedstrings:
+“fastest”: 0
+“fast”: 10
+“normal”: 6
+“slow”: 3
+“slowest”: 1
             
-            
+NOTE: if you don't want to always write turtle.(anyomotion)
+you can import turlte as: from turtle import * 
+import *: means import all methodes 
             
             
             
