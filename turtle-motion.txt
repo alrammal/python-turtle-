@@ -1,0 +1,44 @@
+turtle.forward(distance)
+turtle.fd(distance)
+
+turtle.back(distance)
+turtle.bk(distance)
+turtle.backward(distance)
+#Parameters:	distance – a number (integer or float)
+
+turtle.right(angle)
+turtle.rt(angle)
+
+turtle.left(angle)¶
+turtle.lt(angle)
+#Parameters:	angle – a number (integer or float)
+
+turtle.goto(x, y)
+turtle.setpos(x, y)
+turtle.setposition(x, y)
+#Parameters:x – a number or a pair/vector of numbers
+            y – a number or None
+           
+turtle.setx(x)
+turtle.sety(y)
+#Parameters:	y and x – a number (integer or float)
+
+turtle.setheading(to_angle)
+turtle.seth(to_angle)
+#Parameters:	to_angle – a number (integer or float)
+
+turtle.home()
+
+turtle.circle(radius, extent=None, steps=None)
+#Parameters:	radius – a number
+            extent – a number (or None)
+            steps – an integer (or None)
+            
+turtle.speed(speed=None)
+#Parameters:	speed – an integer in the range 0..10 or a speedstring
+            
+            
+            
+            
+            
+            
