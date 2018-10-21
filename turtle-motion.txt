@@ -1,32 +1,46 @@
 import turtle
 turtle.forward(distance)
 turtle.fd(distance)
+#Parameters:	distance – a number (integer or float)
+*Move the turtle forward by the specified distance, in the direction the turtle is headed
 
 turtle.back(distance)
 turtle.bk(distance)
 turtle.backward(distance)
 #Parameters:	distance – a number (integer or float)
+*Move the turtle backward by distance, opposite to the direction the turtle is headed. Do not change the turtle’s heading
 
 turtle.right(angle)
 turtle.rt(angle)
+#Parameters:	angle – a number (integer or float)
+*Turn turtle right by angle units. (Units are by default degrees, but can be set via the degrees() and radians() functions.)
 
 turtle.left(angle)
 turtle.lt(angle)
 #Parameters:	angle – a number (integer or float)
+*Turn turtle left by angle units. (Units are by default degrees, but can be set via the degrees() and radians() functions.)
+
 
 turtle.goto(x, y)
 turtle.setpos(x, y)
 turtle.setposition(x, y)
 #Parameters:x – a number or a pair/vector of numbers
             y – a number or None
+*Move turtle to an absolute position
+
            
 turtle.setx(x)
+#Parameters:	y and x – a number (integer or float)
+*Set the turtle’s first coordinate to x, leave second coordinate unchanged
 turtle.sety(y)
 #Parameters:	y and x – a number (integer or float)
+*Set the turtle’s second coordinate to y, leave first coordinate unchanged
+
 
 turtle.setheading(to_angle)
 turtle.seth(to_angle)
 #Parameters:	to_angle – a number (integer or float)
+*Set the orientation of the turtle to to_angle
 # Here are some common directions in degrees:
 standard mode	logo mode
 0 - east	           0 - north
@@ -39,6 +53,10 @@ turtle.circle(radius, extent=None, steps=None)
 #Parameters:	radius – a number
             extent – a number (or None)
             steps – an integer (or None)
+*Draw a circle with given radius. The center is radius units left of the turtle; extent – an angle – determines which part of the circle is drawn. If extent is not given, draw the entire circle. If extent is not a full circle, one endpoint of the arc is the current pen position. Draw the arc in counterclockwise direction if radius is positive, otherwise in clockwise direction. Finally the direction of the turtle is changed by the amount of extent.
+
+As the circle is approximated by an inscribed regular polygon, steps determines the number of steps to use. If not given, it will be calculated automatically. May be used to draw regular polygons
+
             
 turtle.speed(speed=None)
 #Parameters:	speed – an integer in the range 0..10 or a speedstring
